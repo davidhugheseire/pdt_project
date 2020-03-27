@@ -4,7 +4,7 @@ connection: "postgresql_10"
 include: "/views/**/*.view"
 
 datagroup: pdt_project_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  sql_trigger: SELECT NOW();;
   max_cache_age: "1 hour"
 }
 
